@@ -1,0 +1,51 @@
+package com.java.assignment1;
+
+import java.util.Scanner;
+
+public class Monthdays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int Month=0, Days=0;
+		String Nameofmonth = null;
+		
+		Scanner S = new Scanner(System.in);
+		System.out.println("Enter the Month Number");
+		Month =	S.nextInt();
+		
+		switch (Month) {
+		
+		case 1: Days=31;Nameofmonth="January";
+		break;
+		case 2: Days=29;Nameofmonth="February";
+		break;
+		case 3: Days=31;Nameofmonth="March";
+		break;
+		case 4: Days=30;Nameofmonth="April";
+		break;
+		case 5: Days=31;Nameofmonth="May";
+		break;
+		case 6: Days=30;Nameofmonth="June";
+		break;
+		case 7: Days=31;Nameofmonth="July";
+		break;
+		case 8: Days=31;Nameofmonth="August";
+		break;
+		case 9: Days=30;Nameofmonth="September";
+		break;
+		case 10: Days=31;Nameofmonth="October";
+		break;
+		case 11: Days=30;Nameofmonth="November";
+		break;
+		case 12: Days=31;Nameofmonth="December";
+		break;
+		default: System.out.println("it's an invalid input,Enter digits between 1 to 12");
+		break;
+		
+		}	
+		System.out.println("Month is " +Nameofmonth +" No of days are "+Days);	
+
+	}
+
+}
